@@ -47,7 +47,7 @@ After changes you have added are satisfying you are ready to test it on server a
 Copy over that data to your xampp server into app folder.
 ```
 Step 8 - See if it works
-```
+
 
 
 
