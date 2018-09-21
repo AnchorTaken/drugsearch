@@ -13,10 +13,8 @@ XAMPP or WAMP. Anything with MySQL DB and php will work.
 ### Installing
 A step by step series of examples that tell you how to get a development env running
 Say what the step will be
-```
-Step 1 - Start
+```Step 1 - Start```
 Clone or download the repository
-```
 Step 2 - Core
 Get familiar with folder structure 
 -API Server (Needs to be run on server like xampp that can handle php)
