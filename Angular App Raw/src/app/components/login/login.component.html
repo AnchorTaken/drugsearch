@@ -1,0 +1,19 @@
+<div class="login-model">
+    <form class="form-inline my-2 my-lg-0">
+        <div *ngIf="auth.user | async; then authenticated else guest">
+          <!-- template will replace this div -->
+        </div>
+      </form>
+      <ng-template #guest>
+          <div class="btn-group">
+              <span class="btn btn-dark no-hover"><i class="fa fa-google" aria-hidden="true"></i></span> 
+              <button class="btn btn-dark" (click)="auth.googleLogin()">Login with Google </button>
+          </div>
+    </ng-template>
+    <ng-template #authenticated>
+      <div *ngIf="auth.user | async as user">
+          <button class="btn btn-dark my-2 my-sm-0" (click)="auth.signOut()">Logout</button>
+      </div>
+    </ng-template>
+   
+  </div>

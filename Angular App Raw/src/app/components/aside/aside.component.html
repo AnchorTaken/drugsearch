@@ -1,0 +1,28 @@
+<div class="aside-container">
+<div class="main-aside" [ngClass]="{'asidemoved-class': highlightedDiv === 1}">
+  <div class="img-logo-container">
+  <a routerLink='/'>
+  <img src="../assets/img/logo-lite.svg" alt=""></a></div>
+  <ul class="nav-custom">
+   <li class="title" style="margin-top: 0px">Top Searched Drugs</li> 
+    <li class="nav-item" *ngFor='let drug of topsearcheddrugs | slice:0:5'>
+      <a class="nav-link active" routerLink='drug/{{drug.slug}}'>{{drug.name}}</a>
+    </li>
+    <li class="title">Safety Information</li> 
+    <li class="nav-item">
+      <a class="nav-link active" routerLink='#'>Some info here</a>
+    </li>
+    <li class="title">Market Information</li> 
+    <li class="nav-item">
+      <a class="nav-link active" routerLink='#'>Vendor List</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link active" routerLink='#'>Market List</a>
+    </li>
+  </ul>
+  <div class="aside-footer-container">
+      © 2018 AnchorDesigns. All Rights Reserved.</div>
+  <button class="btn btn-primary aside-button" (click)="toggleHighlight(1);"> <i class="fa"  [ngClass]="[highlightedDiv === 1 ? 'fa-angle-double-left' : 'fa-angle-double-right']" aria-hidden="true"></i></button>
+</div>
+
+</div>

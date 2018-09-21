@@ -1,0 +1,260 @@
+<div *ngIf='drugsingle'>
+  
+  <!--  -->
+  <div class="single-container" style="margin: 20px; position: relative;">
+ <div class="alert alert-danger alert-dismissible fade show" role="alert">
+    <strong>Holy guacamole!</strong> You should check in on some of those fields below.
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="img-container" style="margin-bottom:30px;height: 600px; display: block; background-image: url(http://via.placeholder.com/1920x1080); background-size: cover; background-position: center; width: 100%;">
+  </div>
+  <span style="display: block; position: absolute; width:100%; height: 2px; background:#7e57c2; left: 0px; right: 0px; margin:20px 0px; margin: auto"></span>
+  <div class="main-content" style="padding-top: 30px;display: block;">
+    <h3 style="color: #7e57c2; text-transform: uppercase;">Official Drug Name: <span style="font-weight: 100">{{drugsingle.name}}</span></h3>
+    <h3 style="color: #7e57c2; text-transform: uppercase;">Alt Names or Street names: <span style="font-weight: 100">{{drugsingle.alt_names}}</span></h3>
+  </div>
+  <div style="display: flex; margin: 20px; width: 100%"><span style="display: block; position: absolute; width:100%; height: 2px; background:#7e57c2; left: 0px; right: 0px; margin: auto"></span></div>
+  <div class="row"><div class="col-4 offset-lg-2"><h3 style="text-align: center; text-transform: uppercase; color:#7e57c2;">Dosages</h3>
+    <table class="table table-bordered" style="color: #7e57c2;">
+    <thead class="bg-primary" style="color:#fff">
+      <tr>
+        <th scope="col">Dosage</th>
+        <th scope="col">Strength</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">25 µg</th>
+        <td>Threshold</td>
+      </tr>
+      <tr>
+        <th scope="row">25 - 75 µg</th>
+        <td>Light</td>
+      </tr>
+      <tr>
+        <th scope="row">75 - 150 µg</th>
+        <td>Common</td>
+      </tr>
+      <tr>
+          <th scope="row">150 - 300 µg</th>
+          <td>Strong</td>
+      </tr>
+      <tr>
+          <th scope="row">300 µg +</th>
+          <td>Heavy</td>
+      </tr>
+    </tbody>
+  </table></div>
+  <div class="col-4"><h3 style="text-align: center; text-transform: uppercase; color:#7e57c2;">Duration</h3>
+    <table class="table table-bordered" style="color: #7e57c2;">
+    <thead class="bg-primary" style="color:#fff">
+      <tr>
+        <th scope="col">Stage</th>
+        <th scope="col">Approximate Time</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">Total</th>
+        <td>8 - 12 hours</td>
+      </tr>
+      <tr>
+        <th scope="row">Onset</th>
+        <td>15 - 30 minutes</td>
+      </tr>
+      <tr>
+        <th scope="row">Come up</th>
+        <td>45 - 90 minutes</td>
+      </tr>
+      <tr>
+          <th scope="row">Peak</th>
+          <td>3 - 5 hours</td>
+      </tr>
+      <tr>
+          <th scope="row">Comedown</th>
+          <td>3 - 5 hours</td>
+      </tr>
+      <tr>
+          <th scope="row">After effects</th>
+          <td>12 - 48 hours</td>
+      </tr>
+    </tbody>
+  </table></div>
+  
+  </div>
+  <div style="display: flex; margin: 20px; width: 100%"><span style="display: block; position: absolute; width:100%; height: 2px; background:#7e57c2; left: 0px; right: 0px; margin: auto"></span></div>
+  <h1 class="lined-h1"></h1>
+  <div class="row">
+    <div class="col-lg-12"><h3 style="text-align: center; text-transform: uppercase; color:#7e57c2; margin-bottom: 20px;">Short Term</h3></div><div class="col-4 offset-lg-2">
+    <ul class="list-group good-effects">
+        <li class="list-group-item active">Positive</li>
+        <li class="list-group-item">Dapibus ac facilisis in</li>
+        <li class="list-group-item">Morbi leo risus</li>
+        <li class="list-group-item">Porta ac consectetur ac</li>
+        <li class="list-group-item">Vestibulum at eros</li>
+      </ul></div>
+  <div class="col-4">
+    <ul class="list-group bad-effects">
+        <li class="list-group-item active">Negative</li>
+        <li class="list-group-item">Dapibus ac facilisis in</li>
+        <li class="list-group-item">Morbi leo risus</li>
+        <li class="list-group-item">Porta ac consectetur ac</li>
+        <li class="list-group-item">Vestibulum at eros</li>
+      </ul></div>
+  
+  </div>
+  <div class="row">
+      <div class="col-lg-12"><h3 style="text-align: center; text-transform: uppercase; color:#7e57c2; margin: 20px 0px;">Long Term</h3></div><div class="col-4 offset-lg-2">
+      <ul class="list-group good-effects">
+          <li class="list-group-item active">Positive</li>
+          <li class="list-group-item">Dapibus ac facilisis in</li>
+          <li class="list-group-item">Morbi leo risus</li>
+          <li class="list-group-item">Porta ac consectetur ac</li>
+          <li class="list-group-item">Vestibulum at eros</li>
+        </ul></div>
+    <div class="col-4">
+      <ul class="list-group bad-effects">
+          <li class="list-group-item active">Negative</li>
+          <li class="list-group-item">Dapibus ac facilisis in</li>
+          <li class="list-group-item">Morbi leo risus</li>
+          <li class="list-group-item">Porta ac consectetur ac</li>
+          <li class="list-group-item">Vestibulum at eros</li>
+        </ul></div>
+    
+    </div>
+    <div style="display: flex; margin: 20px; width: 100%"><span style="display: block; position: absolute; width:100%; height: 2px; background:#7e57c2; left: 0px; right: 0px; margin: auto"></span></div>
+    <div class="row">
+        <div class="col-lg-12"><h3 style="text-align: center; text-transform: uppercase; color:#7e57c2; margin-bottom: 20px;">Feedback</h3></div><div class="col-lg-12">
+    <div class="col-lg-12">
+        <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">User</th>
+                <th scope="col">Trust Level</th>
+                <th scope="col">Rating of Experience</th>
+                <th scope="col">Submitted at</th>
+              </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th><img class="profile-img" src="https://vignette.wikia.nocookie.net/substratum-themes/images/f/f6/Com.google.android.contacts.png/revision/latest?cb=20170901212735" alt="" style=""> Jhon Doe</th>
+                    <td><span class="badge badge-pill badge-dark badge-feedback">New</span></td>
+                    <td><ul class="rating">
+                      <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                      <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                      <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                      <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                      <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                    </ul></td>
+                    <td>21 Sep 2018</td>
+                  </tr>
+                  <tr>
+                    <th><img class="profile-img" src="https://vignette.wikia.nocookie.net/substratum-themes/images/f/f6/Com.google.android.contacts.png/revision/latest?cb=20170901212735" alt="" style=""> Jhon Doe</th>
+                    <td><span class="badge badge-pill badge-warning badge-feedback">Untrusted</span></td>
+                    <td><ul class="rating">
+                      <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                      <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                      <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                      <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                      <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                    </ul></td>
+                    <td>21 Sep 2018</td>
+                  </tr>
+                  <tr>
+                    <th><img class="profile-img" src="https://vignette.wikia.nocookie.net/substratum-themes/images/f/f6/Com.google.android.contacts.png/revision/latest?cb=20170901212735" alt="" style=""> Jhon Doe</th>
+                    <td><span class="badge badge-pill badge-success badge-feedback">Trusted</span></td>
+                    <td><ul class="rating">
+                      <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                      <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                      <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                      <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                      <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                    </ul></td>
+                    <td>21 Sep 2018</td>
+                  </tr>
+                  <tr>
+                    <th><img class="profile-img" src="https://vignette.wikia.nocookie.net/substratum-themes/images/f/f6/Com.google.android.contacts.png/revision/latest?cb=20170901212735" alt="" style=""> Jhon Doe</th>
+                    <td><span class="badge badge-pill badge-danger badge-feedback">Banned</span></td>
+                    <td><ul class="rating">
+                      <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                      <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                      <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                      <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                      <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                    </ul></td>
+                    <td>21 Sep 2018</td>
+                  </tr>
+            </tbody>
+          </table>
+          <nav aria-label="Page navigation example">
+              <ul class="pagination">
+                <li class="page-item">
+                  <a class="page-link" href="#" aria-label="Previous">
+                    <span aria-hidden="true">&laquo;</span>
+                    <span class="sr-only">Previous</span>
+                  </a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item">
+                  <a class="page-link" href="#" aria-label="Next">
+                    <span aria-hidden="true">&raquo;</span>
+                    <span class="sr-only">Next</span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+        </div> 
+        <div class="col-lg-12">
+            <div class="col-lg-12"><h3 style="text-align: center; text-transform: uppercase; color:#7e57c2; margin-bottom: 20px;">Add your experience</h3></div>
+            <form class="custom-form-group">
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                  <div class="exp-fields">
+                      <label class="sr-only" for="inlineFormInputGroup">Username</label>
+                      <div class="input-group mb-2">
+                        <div class="input-group-prepend">
+                          <div class="input-group-text">Dosage Taken</div>
+                        </div>
+                        <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Dosage in {{drugsingle.dosage}}">
+                      </div>
+                  </div>
+                  </div>
+                  <div class="form-group col-md-6">
+                      <div class="exp-fields">
+                          <label class="sr-only" for="inlineFormInputGroup">Username</label>
+                          <div class="input-group mb-2">
+                            <div class="input-group-prepend">
+                              <div class="input-group-text">Overall Experience</div>
+                            </div>
+                            <div class="form-control"> <ul class="rating">
+                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                            </ul></div>
+                          </div>
+                      </div>    
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="feedback">
+                    <label class="form-check-label" for="gridCheck">
+                      Feedback in Detail
+                    </label>
+                    <textarea class="form-control" name="" id="" cols="30" rows="10" style="border-radius: 0px"></textarea>
+                  </div>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
+
+        </div>   
+   </div>
+   
+      
+      </div>
+</div>

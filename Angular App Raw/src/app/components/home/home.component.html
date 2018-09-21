@@ -1,0 +1,122 @@
+<div class="main-body-inner page ">
+<div class="container home-container">
+  
+  <div class="row stats">
+    <div class="col-lg-3">
+      <div class="box first">
+        <span class="title">Drugs</span>
+        <p class="subtitle">Drug covarage on platform</p>
+        <span class="number">23</span>
+        <i class="fa fa-flask" aria-hidden="true"></i>
+      </div>
+    </div>
+    <div class="col-lg-3">
+      <div class="box first">
+        <span class="title">Drugs</span>
+        <p class="subtitle">Drug covarage on platform</p>
+        <span class="number">23</span>
+        <i class="fa fa-flask" aria-hidden="true"></i>
+      </div>
+    </div>
+    <div class="col-lg-3">
+      <div class="box first">
+        <span class="title">Drugs</span>
+        <p class="subtitle">Drug covarage on platform</p>
+        <span class="number">23</span>
+        <i class="fa fa-flask" aria-hidden="true"></i>
+      </div>
+    </div>
+    <div class="col-lg-3">
+      <div class="box first">
+        <span class="title">Drugs</span>
+        <p class="subtitle">Drug covarage on platform</p>
+        <span class="number">23</span>
+        <i class="fa fa-flask" aria-hidden="true"></i>
+      </div>
+    </div>
+
+  </div>
+
+<!-- <div class="col-lg-12" *ngFor='let n of notification'>
+<div *ngIf='n?.show'>
+  <div class="alert alert-danger alert-dismissible fade show" role="alert">
+{{n.important}}
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div></div>
+</div> -->
+<div class="row">
+<div class="col-lg-4">
+  <div class="box-my-list">
+  <div class="title">My List</div>
+  <div class="inside">
+      <a href="javascript:void(0)" *ngFor='let drug of drugs' (click)="doSearch(spann.value)" class="badge badge-pill badge-primary category favourites">
+ 
+          <input type="text" class="form-control"  placeholder="Search" #spann value="{{drug.name}}" hidden>{{drug.name}}
+        </a> 
+  </div>
+</div>
+</div>
+
+<!-- <div class="col-lg-4">
+<a href="javascript:void(0)" *ngFor='let drug of drugs' (click)="doSearch(spann.value)" class="badge badge-pill badge-primary category">
+ 
+    <input type="text" class="form-control"  placeholder="Search" #spann value="{{drug.name}}" hidden>{{drug.name}}
+  </a> 
+</div> -->
+
+
+    <div class="col-lg-4">
+      <div class="search-box" style="margin-bottom: 20px">
+          <div class="main-title">Search</div>
+          <div class="input-group home">
+              <input type="text" class="form-control"  placeholder="Search" #inputbox>
+              <div class="input-group-append">
+                <button class="btn btn-primary" (click)="doSearch(inputbox.value)">Search</button>
+              </div>
+            </div>
+      </div>
+      <div class="col-lg-12 col-md-6" *ngFor='let drug of dataService.results' style="margin-bottom: 10px">
+          <div class="card" style="width: 100%">
+            <img class="card-img-top" src="{{drug.thumbnail}}">
+            <div class="card-body">
+              <h5 class="card-title">{{drug.name}}</h5>
+              <b class="card-text">ALT NAMES:</b>{{drug.alt_names}}
+              <p class="card-text">{{drug.description}}</p>
+              <a routerLink='drug/{{drug.slug}}' class="btn btn-primary full-width">About</a>
+              <a href="#" class="btn btn-primary full-width">Safety</a>
+              <a href="#" class="btn btn-primary full-width">Combinations</a>
+            </div>
+          </div>
+          </div> 
+      </div></div>
+<!-- <div class="row home-menu-box" *ngFor='let drug of drugs'>
+  <div class="col-lg-2 inside-one">
+    {{drug.name}}
+  </div>
+  <div class="col-lg-8">
+    <div class="container-that-hides">
+    <div class="holder-for-effects">
+    <span class="badge badge-pill badge-primary category">{{drug.category}}</span>
+    <span class="badge badge-pill badge-secondary">Secondary</span>
+    <span class="badge badge-pill badge-success">Success</span>
+    <span class="badge badge-pill badge-danger">Danger</span>
+    <span class="badge badge-pill badge-warning">Warning</span>
+    <span class="badge badge-pill badge-info">Info</span>
+    <span class="badge badge-pill badge-light">Light</span>
+    <span class="badge badge-pill badge-dark">Dark</span>
+  </div></div></div>
+  <div class="col-lg-2 lets-get-lg-fked">
+    <div class="input-group-append">
+      <button class="btn btn-primary full-width and-the-btn-inside-it">Search</button>
+    </div>
+  </div>
+</div> -->
+
+<!--  -->
+
+
+
+
+</div></div>

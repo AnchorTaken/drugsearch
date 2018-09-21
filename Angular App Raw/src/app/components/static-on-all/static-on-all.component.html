@@ -1,0 +1,13 @@
+<a (click)="friendsSwtich(1);"><div class="usersonline" [ngClass]="{'friends-up': friendsSwtichStatus === 1}" >
+  <div class="holder">
+  <div class="title">My Friends</div>
+  <div class="inside">
+    <a href="javascript:void(0)" *ngFor='let useon of usersonline' class="">{{useon.username}}
+    <span class="status online"></span> 
+    </a>
+    <a href="javascript:void(0)" *ngFor='let useoff of usersoffline' class="">{{useoff.username}}
+         <span class="status offline"></span> 
+        </a>
+  </div></div>
+</div>
+</a>

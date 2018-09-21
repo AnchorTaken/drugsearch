@@ -1,0 +1,39 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <button type="button" class="btn btn-dark my-2 my-sm-0">Home</button>
+      </li>
+      <li class="nav-item">
+        <div class="btn-group">
+          <button type="button" class="btn btn-dark my-2 my-sm-0">Categories</button>
+          <button type="button" class="btn btn-dark my-2 my-sm-0 dropdown-toggle dropdown-toggle-split btn-nopadding-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <span class="sr-only">Toggle Dropdown</span>
+          </button>
+          <div class="dropdown-menu icall-custom-li-on-this">
+            <a class="dropdown-item title disabled" href="#">Top 5 Searched Categories</a>
+           <a class="dropdown-item" *ngFor='let cats of cat | slice:0:5, async' routerLink='drug'>{{cats.category}}</a>
+            
+          </div>
+        </div>
+      </li>
+    </ul>
+    <div *ngFor='let u of userdata'>
+    <div *ngIf='u?.NAME'>
+    <form class="form-inline my-2 my-lg-0">
+     <button class="btn btn-dark my-2 my-sm-0" (click)="onNavigate()">Logout</button>
+    </form>
+    </div>
+    <div *ngIf='!u?.NAME'>
+      <form class="form-inline my-2 my-lg-0">
+       <button class="btn btn-dark my-2 my-sm-0" (click)="onNavigate()">Login</button>
+      </form>
+      </div>
+</div>
+  </div>
+</nav>
+<div class="bottom-slash"></div>
