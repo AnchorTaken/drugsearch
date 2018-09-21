@@ -5,11 +5,11 @@ I'm not quite sure what this project will end up being and I only have a breif d
 
 ### Prerequisites
 What things you need to install the software and how to install them
-```
+
 * [Node.js](https://nodejs.org/) - Core
 * [VSCode](https://code.visualstudio.com/) - (Prefferable but not mandatory)
 * [XAMPP](https://www.apachefriends.org/) - (Anything with MySQL DB and php will work)
-```
+
 ### Installing
 Step 1 - Start
 ```
@@ -79,8 +79,8 @@ Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c6
 ## Versioning
 We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/AnchorTaken/drugsearch/tags). 
 ## Authors
-* **Evalds** - *Initial work* - [AnchorDesigns](https://github.com/AnchorDesigns)
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
+* **Evalds** - *Initial work* - [AnchorTaken](https://github.com/AnchorTaken)
+See also the list of [contributors](https://github.com/AnchorTaken/drugsearch/contributors) who participated in this project.
 ## License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
 ## Acknowledgments
