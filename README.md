@@ -11,9 +11,6 @@ VSCode (Prefferable but not mandatory)
 XAMPP or WAMP. Anything with MySQL DB and php will work. 
 ```
 ### Installing
-A step by step series of examples that tell you how to get a development env running
-Say what the step will be
-```
 Step 1 - Start
 ```
 Clone or download the repository
@@ -26,27 +23,29 @@ Get familiar with folder structure
 -Other (MySQL and other stuffs)
 ```
 Step 3 - Setting up API Server
+```
 Open Repo and go to API Server and copy all the info from there to xampp or your preffered server core folder.
 ```
 Step 4 - Importing MySQL
 Open MySQL and import data by going to import and selecting the file in "other" folder to import
-```
 Step 5 - Quick test
 Run server to see if it's spinning up. In case of xampp just booting up server and seeing landing page is enought to indicate that it works.
-```
 Step 6 - Spinning up Angular App
 Goto Angular App and open it in VSCode or GitBash or other other just default terminal.
 Enter "npm i" to install all the dependencies.
 Then enter "npm i -g @angular/cli" to install angular cli. !!!!!!
 Then enter "ng serve --open" to spin up the app. You can use "--port 0000" after open if you have another node app running in background.
-```
 Step 7 - Building and deploying to server
 After changes you have added are satisfying you are ready to test it on server and see if it's going to work. Use "ng build" to quickly compile the app. It will be placed in DIST folder in core angular app. 
 Copy over that data to your xampp server into app folder.
-```
 Step 8 - See if it works
-```
 
+Give the example
+```
+And repeat
+```
+until finished
+```
 End with an example of getting some data out of the system or using it for a little demo
 ## Running the tests
 Explain how to run the automated tests for this system
