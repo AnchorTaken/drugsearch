@@ -17,7 +17,7 @@ Run server to see if it's spinning up. In case of xampp just booting up server a
 Step 6 - Spinning up Angular App
 Goto Angular App and open it in VSCode or GitBash or other other just default terminal.
 Enter "npm i" to install all the dependencies.
-# Then enter "npm install angular-cli" to install angular cli. !!!!!!
+Then enter "npm i -g @angular/cli" to install angular cli. !!!!!!
 Then enter "ng serve --open" to spin up the app. You can use "--port 0000" after open if you have another node app running in background.
 Step 7 - Building and deploying to server
 After changes you have added are satisfying you are ready to test it on server and see if it's going to work. Use "ng build" to quickly compile the app. It will be placed in DIST folder in core angular app. 
