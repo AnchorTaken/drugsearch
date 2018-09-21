@@ -6,9 +6,9 @@ I'm not quite sure what this project will end up being and I only have a breif d
 ### Prerequisites
 What things you need to install the software and how to install them
 ```
-Node.js
-VSCode (Prefferable but not mandatory)
-XAMPP or WAMP. Anything with MySQL DB and php will work. 
+* [Node.js](https://nodejs.org/) - Core
+* [VSCode](https://code.visualstudio.com/) - (Prefferable but not mandatory)
+* [XAMPP](https://www.apachefriends.org/) - (Anything with MySQL DB and php will work)
 ```
 ### Installing
 Step 1 - Start
@@ -37,9 +37,9 @@ Run server to see if it's spinning up. In case of xampp just booting up server a
 Step 6 - Spinning up Angular App
 ```
 Goto Angular App and open it in VSCode or GitBash or other other just default terminal.
-Enter **npm i** to install all the dependencies.
-Then enter **npm i -g @angular/cli** to install angular cli. !!!!!!
-Then enter **ng serve --open** to spin up the app. You can use "--port 0000" after open if you have another node app running in background.
+Enter "npm i" to install all the dependencies.
+Then enter "npm i -g @angular/cli" to install angular cli.
+Then enter "ng serve --open" to spin up the app. You can use "--port 0000" after open if you have another node app running in background.
 ```
 Step 7 - Building and deploying to server
 ```
@@ -50,7 +50,7 @@ Step 8 - See if it works
 
 
 
-
+<!-- 
 End with an example of getting some data out of the system or using it for a little demo
 ## Running the tests
 Explain how to run the automated tests for this system
@@ -63,25 +63,25 @@ Give an example
 Explain what these tests test and why
 ```
 Give an example
-```
+``` 
 ## Deployment
-Add additional notes about how to deploy this on a live system
+Add additional notes about how to deploy this on a live system-->
 ## Built With
-* [Codeigniter](http://www.dropwizard.io/1.0.2/docs/) - Main Framework For API Management
-* [Codeigniter REST Api](https://rometools.github.io/rome/) - Sub library for Codeigniter
-* [Angular](https://maven.apache.org/) - Core 
-* [Bootsrap](https://maven.apache.org/) - Essencials for layout and design
-* [Jquery](https://maven.apache.org/) - Essencials 
-* [Font Awasome](https://maven.apache.org/) - Icons 
+* [Codeigniter](http://codeigniter.com/) - Main Framework For API Management
+* [Codeigniter REST Api](https://github.com/chriskacerguis/codeigniter-restserver) - Sub library for Codeigniter
+* [Angular](https://angular.io/) - Core 
+* [Bootsrap](http://getbootstrap.com/) - Essencials for layout and design
+* [Jquery](https://jquery.com) - Essencials 
+* [Font Awasome](https://fontawesome.com/) - Icons 
 
 ## Contributing
 Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
 ## Versioning
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
+We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/AnchorTaken/drugsearch/tags). 
 ## Authors
 * **Evalds** - *Initial work* - [AnchorDesigns](https://github.com/AnchorDesigns)
 See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
 ## License
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
 ## Acknowledgments
 *Billie Thompson* - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth). For README Example
