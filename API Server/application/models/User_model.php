@@ -19,21 +19,44 @@
 			// Validate
 			$this->db->where('username', $username);
 			$this->db->where('password', $password);
+			// Get Cookie
 			$cookie_id = get_cookie('ci_session', TRUE);
-			// $sessin_id = $this->db->query("SELECT `id` FROM `ci_sessions` WHERE id = '" . $cookie_id . "' ");
 			$result = $this->db->get('users');
+			// Assign Cookie To User
 			$this->db->from('users');
 			$this->db->where('username', $username);
 			$this->db->set('sesion_id', $cookie_id);
 			$this->db->set('logged_in', 1);
 			$this->db->update('users');
-			// return $this->db->update("UPDATE  SET 'sesion_id' = '" .  . "' FROM '' WHERE 'username' = '" .  . "'");
-
+			// Counts drugs
+			$count_drugs = $this->db->get('drugs_list');
+			$total_drugs = $count_drugs->num_rows();
+			$this->db->from('stats');
+			$this->db->where('name','drugs');
+			$this->db->set('value', $total_drugs);
+			$this->db->update('stats');
+			// Counts users
+			$count_users = $this->db->get('users');
+			$total_users = $count_users->num_rows();
+			$this->db->from('stats');
+			$this->db->where('name','users');
+			$this->db->set('value', $total_users);
+			$this->db->update('stats');
+			// Counts users
+			$this->db->where('logged_in', 1);
+			$count_online = $this->db->get('users');
+			$total_online = $count_online->num_rows();
+			$this->db->from('stats');
+			$this->db->where('name','online');
+			$this->db->set('value', $total_online);
+			$this->db->update('stats');
+			// Check if user exsist
 			if($result->num_rows() == 1){
 				return $result->row(0)->id; 	
 			} else {
 				return false;
 			}
+			 
 		}
 		
 		// Log user in

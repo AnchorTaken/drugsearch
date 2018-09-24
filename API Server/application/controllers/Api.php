@@ -79,6 +79,10 @@ class Api extends REST_Controller
         $offlineuser = $this->offlineusers->read();
         $this->response($offlineuser); 
         }
+        public function stats_get(){
+        $stats = $this->stats->read();
+        $this->response($stats); 
+        }
         // public function menu_get(){
         //     $markets = $this->menu_model->read();
         //     $this->response($markets); 

@@ -23,6 +23,7 @@ class api_loader extends CI_Model
         $this->load->model('api/defaultdruglist');
         $this->load->model('api/onlineusers');
         $this->load->model('api/offlineusers');
+        $this->load->model('api/stats');
         $this->load->model('api/ApiCombination');
                
        }    
