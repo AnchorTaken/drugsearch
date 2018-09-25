@@ -2,39 +2,14 @@
 <div class="container home-container">
   
   <div class="row stats">
-    <div class="col-lg-3">
+    <div class="col-lg-3" *ngFor='let stat of stats'>
       <div class="box first">
-        <span class="title">Drugs</span>
-        <p class="subtitle">Drug covarage on platform</p>
-        <span class="number">23</span>
-        <i class="fa fa-flask" aria-hidden="true"></i>
+        <span class="title">{{stat.name}}</span>
+        <p class="subtitle">{{stat.subtitle}}</p>
+        <span class="number">{{stat.value}}</span>
+        <i class="fa {{stat.icon}}" aria-hidden="true"></i>
       </div>
     </div>
-    <div class="col-lg-3">
-      <div class="box first">
-        <span class="title">Drugs</span>
-        <p class="subtitle">Drug covarage on platform</p>
-        <span class="number">23</span>
-        <i class="fa fa-flask" aria-hidden="true"></i>
-      </div>
-    </div>
-    <div class="col-lg-3">
-      <div class="box first">
-        <span class="title">Drugs</span>
-        <p class="subtitle">Drug covarage on platform</p>
-        <span class="number">23</span>
-        <i class="fa fa-flask" aria-hidden="true"></i>
-      </div>
-    </div>
-    <div class="col-lg-3">
-      <div class="box first">
-        <span class="title">Drugs</span>
-        <p class="subtitle">Drug covarage on platform</p>
-        <span class="number">23</span>
-        <i class="fa fa-flask" aria-hidden="true"></i>
-      </div>
-    </div>
-
   </div>
 
 <!-- <div class="col-lg-12" *ngFor='let n of notification'>

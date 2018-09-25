@@ -73,6 +73,11 @@ export class DataService {
     .map(response => response.json())
     .catch(this._errorrHandler);
   }
+  getStatslist() {
+    return this.cat = this.http.get(this.produrl + '/api/stats')
+    .map(response => response.json())
+    .catch(this._errorrHandler);
+  }
   _errorrHandler (error: Response) {
   console.error(error);
   return Observable.throw(error || 'Server Error');

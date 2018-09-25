@@ -434,7 +434,6 @@ background: #7e57c2
 }
 .stats .box.first{
   background: linear-gradient(to right, #d064f8 0%,#7e57c2 100%);
-  border: 1px solid #7e57c2;
 }
 .stats .box .title {
   display: block;

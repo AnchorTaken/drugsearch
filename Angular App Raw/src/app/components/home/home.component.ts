@@ -21,6 +21,7 @@ export class HomeComponent implements OnInit {
   drugs: any;
   drugss: any;
   drug: Observable<Drug[]>;
+  stats: any;
   topsearcheddrugs: any;
   // notification: Notification;
   public setTitle( newTitle: string) {
@@ -33,6 +34,10 @@ export class HomeComponent implements OnInit {
   this.dataService.getDrugsslist().subscribe((drugss) => {
     // console.log(drugss);
     this.drugss = drugss;
+  });
+  this.dataService.getStatslist().subscribe((stats) => {
+    console.log(stats);
+    this.stats = stats;
   });
   // this.dataService.getNotificationlist().subscribe((notification) => {
   //   console.log(notification);
