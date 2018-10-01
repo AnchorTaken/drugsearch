@@ -11,3 +11,22 @@
   </div></div>
 </div>
 </a> -->
+<a (click)="friendsSwtich(1);">
+  <div class="friends-button" [ngClass]="{'shown': friendsSwtichStatus === 1}">
+    <i class="fa fa-users" aria-hidden="true"></i>
+  </div>
+</a>
+
+<div class="off-canvas-friends" [ngClass]="{'shown': friendsSwtichStatus === 1}">
+  <div class="">
+    <div class="title">My Friends</div>
+    <div class="inside">
+      <a href="javascript:void(0)" *ngFor='let useon of usersonline' class="">{{useon.username}}
+      <span class="status online"></span> 
+      </a>
+      <a href="javascript:void(0)" *ngFor='let useoff of usersoffline' class="">{{useoff.username}}
+           <span class="status offline"></span> 
+          </a>
+    </div>
+  </div>
+</div>

@@ -82,22 +82,17 @@ var AppComponent = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__angular_material_autocomplete__ = __webpack_require__("./node_modules/@angular/material/esm5/autocomplete.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_14_bootstrap__ = __webpack_require__("./node_modules/bootstrap/dist/js/bootstrap.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_14_bootstrap___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_14_bootstrap__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__ng_bootstrap_ng_bootstrap__ = __webpack_require__("./node_modules/@ng-bootstrap/ng-bootstrap/index.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__app_component__ = __webpack_require__("./src/app/app.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__components_home_home_component__ = __webpack_require__("./src/app/components/home/home.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__components_pill_library_pill_library_component__ = __webpack_require__("./src/app/components/pill-library/pill-library.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__components_forofor_forofor_component__ = __webpack_require__("./src/app/components/forofor/forofor.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__components_nav_nav_component__ = __webpack_require__("./src/app/components/nav/nav.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__components_aside_aside_component__ = __webpack_require__("./src/app/components/aside/aside.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__components_footer_footer_component__ = __webpack_require__("./src/app/components/footer/footer.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__components_drugsingle_drugsingle_component__ = __webpack_require__("./src/app/components/drugsingle/drugsingle.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__components_login_login_component__ = __webpack_require__("./src/app/components/login/login.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_25__components_typeahead_focus_typeahead_focus_component__ = __webpack_require__("./src/app/components/typeahead-focus/typeahead-focus.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_26__components_friends_list_friends_list_component__ = __webpack_require__("./src/app/components/friends-list/friends-list.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_27__components_static_on_all_static_on_all_component__ = __webpack_require__("./src/app/components/static-on-all/static-on-all.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_28__core_core_module__ = __webpack_require__("./src/app/core/core.module.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_29__services_data_service__ = __webpack_require__("./src/app/services/data.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_30__services_auth_service__ = __webpack_require__("./src/app/services/auth.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__app_component__ = __webpack_require__("./src/app/app.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__components_home_home_component__ = __webpack_require__("./src/app/components/home/home.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__components_pill_library_pill_library_component__ = __webpack_require__("./src/app/components/pill-library/pill-library.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__components_forofor_forofor_component__ = __webpack_require__("./src/app/components/forofor/forofor.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__components_nav_nav_component__ = __webpack_require__("./src/app/components/nav/nav.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__components_aside_aside_component__ = __webpack_require__("./src/app/components/aside/aside.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__components_footer_footer_component__ = __webpack_require__("./src/app/components/footer/footer.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__components_drugsingle_drugsingle_component__ = __webpack_require__("./src/app/components/drugsingle/drugsingle.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__components_friends_list_friends_list_component__ = __webpack_require__("./src/app/components/friends-list/friends-list.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__components_static_on_all_static_on_all_component__ = __webpack_require__("./src/app/components/static-on-all/static-on-all.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_25__services_data_service__ = __webpack_require__("./src/app/services/data.service.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -111,6 +106,12 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
+// import { FirebaseApp } from '@firebase/app-types';
+// import { FirebaseAuth } from '@firebase/auth-types';
+// import { FirebaseDatabase } from '@firebase/database-types';
+// import { FirebaseMessaging } from '@firebase/messaging-types';
+// import { FirebaseStorage } from '@firebase/storage-types';
+// import { FirebaseFirestore } from '@firebase/firestore-types';
 // Mat design Imports
 
 
@@ -123,7 +124,6 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 // Bootstrap
 
-
 // Components
 
 
@@ -135,17 +135,11 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-
-
-// Modules
-
 // Services
 
-
 var appRoutes = [
-    { path: '', component: __WEBPACK_IMPORTED_MODULE_17__components_home_home_component__["a" /* HomeComponent */] },
-    { path: 'typeahead', component: __WEBPACK_IMPORTED_MODULE_25__components_typeahead_focus_typeahead_focus_component__["a" /* TypeaheadFocusComponent */] },
-    { path: 'drug/:slug', component: __WEBPACK_IMPORTED_MODULE_23__components_drugsingle_drugsingle_component__["a" /* DrugsingleComponent */] },
+    { path: '', component: __WEBPACK_IMPORTED_MODULE_16__components_home_home_component__["a" /* HomeComponent */] },
+    { path: 'drug/:slug', component: __WEBPACK_IMPORTED_MODULE_22__components_drugsingle_drugsingle_component__["a" /* DrugsingleComponent */] },
 ];
 var AppModule = /** @class */ (function () {
     function AppModule() {
@@ -153,18 +147,16 @@ var AppModule = /** @class */ (function () {
     AppModule = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["K" /* NgModule */])({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_16__app_component__["a" /* AppComponent */],
-                __WEBPACK_IMPORTED_MODULE_17__components_home_home_component__["a" /* HomeComponent */],
-                __WEBPACK_IMPORTED_MODULE_18__components_pill_library_pill_library_component__["a" /* PillLibraryComponent */],
-                __WEBPACK_IMPORTED_MODULE_19__components_forofor_forofor_component__["a" /* ForoforComponent */],
-                __WEBPACK_IMPORTED_MODULE_20__components_nav_nav_component__["a" /* NavComponent */],
-                __WEBPACK_IMPORTED_MODULE_21__components_aside_aside_component__["a" /* AsideComponent */],
-                __WEBPACK_IMPORTED_MODULE_22__components_footer_footer_component__["a" /* FooterComponent */],
-                __WEBPACK_IMPORTED_MODULE_23__components_drugsingle_drugsingle_component__["a" /* DrugsingleComponent */],
-                __WEBPACK_IMPORTED_MODULE_24__components_login_login_component__["a" /* LoginComponent */],
-                __WEBPACK_IMPORTED_MODULE_25__components_typeahead_focus_typeahead_focus_component__["a" /* TypeaheadFocusComponent */],
-                __WEBPACK_IMPORTED_MODULE_26__components_friends_list_friends_list_component__["a" /* FriendsListComponent */],
-                __WEBPACK_IMPORTED_MODULE_27__components_static_on_all_static_on_all_component__["a" /* StaticOnAllComponent */]
+                __WEBPACK_IMPORTED_MODULE_15__app_component__["a" /* AppComponent */],
+                __WEBPACK_IMPORTED_MODULE_16__components_home_home_component__["a" /* HomeComponent */],
+                __WEBPACK_IMPORTED_MODULE_17__components_pill_library_pill_library_component__["a" /* PillLibraryComponent */],
+                __WEBPACK_IMPORTED_MODULE_18__components_forofor_forofor_component__["a" /* ForoforComponent */],
+                __WEBPACK_IMPORTED_MODULE_19__components_nav_nav_component__["a" /* NavComponent */],
+                __WEBPACK_IMPORTED_MODULE_20__components_aside_aside_component__["a" /* AsideComponent */],
+                __WEBPACK_IMPORTED_MODULE_21__components_footer_footer_component__["a" /* FooterComponent */],
+                __WEBPACK_IMPORTED_MODULE_22__components_drugsingle_drugsingle_component__["a" /* DrugsingleComponent */],
+                __WEBPACK_IMPORTED_MODULE_23__components_friends_list_friends_list_component__["a" /* FriendsListComponent */],
+                __WEBPACK_IMPORTED_MODULE_24__components_static_on_all_static_on_all_component__["a" /* StaticOnAllComponent */]
             ],
             imports: [
                 __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
@@ -178,15 +170,13 @@ var AppModule = /** @class */ (function () {
                 __WEBPACK_IMPORTED_MODULE_4__angular_forms__["a" /* FormsModule */],
                 __WEBPACK_IMPORTED_MODULE_5__angular_platform_browser_animations__["a" /* BrowserAnimationsModule */],
                 __WEBPACK_IMPORTED_MODULE_11__angular_material_expansion__["a" /* MatExpansionModule */],
-                __WEBPACK_IMPORTED_MODULE_2__angular_router__["c" /* RouterModule */].forRoot(appRoutes),
-                __WEBPACK_IMPORTED_MODULE_28__core_core_module__["a" /* CoreModule */],
+                __WEBPACK_IMPORTED_MODULE_2__angular_router__["b" /* RouterModule */].forRoot(appRoutes),
                 __WEBPACK_IMPORTED_MODULE_12__angular_material_dialog__["a" /* MatDialogModule */],
-                __WEBPACK_IMPORTED_MODULE_4__angular_forms__["d" /* ReactiveFormsModule */],
+                __WEBPACK_IMPORTED_MODULE_4__angular_forms__["c" /* ReactiveFormsModule */],
                 __WEBPACK_IMPORTED_MODULE_13__angular_material_autocomplete__["a" /* MatAutocompleteModule */],
-                __WEBPACK_IMPORTED_MODULE_15__ng_bootstrap_ng_bootstrap__["a" /* NgbModule */].forRoot()
             ],
-            providers: [__WEBPACK_IMPORTED_MODULE_29__services_data_service__["a" /* DataService */], __WEBPACK_IMPORTED_MODULE_30__services_auth_service__["a" /* AuthService */], __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["d" /* Title */]],
-            bootstrap: [__WEBPACK_IMPORTED_MODULE_16__app_component__["a" /* AppComponent */]],
+            providers: [__WEBPACK_IMPORTED_MODULE_25__services_data_service__["a" /* DataService */], __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["d" /* Title */]],
+            bootstrap: [__WEBPACK_IMPORTED_MODULE_15__app_component__["a" /* AppComponent */]],
             schemas: [
                 __WEBPACK_IMPORTED_MODULE_1__angular_core__["j" /* CUSTOM_ELEMENTS_SCHEMA */]
             ],
@@ -515,7 +505,7 @@ module.exports = ""
 /***/ "./src/app/components/home/home.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"main-body-inner page \">\n<div class=\"container home-container\">\n  \n  <div class=\"row stats\">\n    <div class=\"col-lg-3\" *ngFor='let stat of stats'>\n      <div class=\"box first\">\n        <span class=\"title\">{{stat.name}}</span>\n        <p class=\"subtitle\">{{stat.subtitle}}</p>\n        <span class=\"number\">{{stat.value}}</span>\n        <i class=\"fa {{stat.icon}}\" aria-hidden=\"true\"></i>\n      </div>\n    </div>\n  </div>\n\n<!-- <div class=\"col-lg-12\" *ngFor='let n of notification'>\n<div *ngIf='n?.show'>\n  <div class=\"alert alert-danger alert-dismissible fade show\" role=\"alert\">\n{{n.important}}\n    <button type=\"button\" class=\"close\" data-dismiss=\"alert\" aria-label=\"Close\">\n      <span aria-hidden=\"true\">&times;</span>\n    </button>\n  </div></div>\n</div> -->\n<div class=\"row\">\n<div class=\"col-lg-4\">\n  <div class=\"box-my-list\">\n  <div class=\"title\">My List</div>\n  <div class=\"inside\">\n      <a href=\"javascript:void(0)\" *ngFor='let drug of drugs' (click)=\"doSearch(spann.value)\" class=\"badge badge-pill badge-primary category favourites\">\n \n          <input type=\"text\" class=\"form-control\"  placeholder=\"Search\" #spann value=\"{{drug.name}}\" hidden>{{drug.name}}\n        </a> \n  </div>\n</div>\n</div>\n\n<!-- <div class=\"col-lg-4\">\n<a href=\"javascript:void(0)\" *ngFor='let drug of drugs' (click)=\"doSearch(spann.value)\" class=\"badge badge-pill badge-primary category\">\n \n    <input type=\"text\" class=\"form-control\"  placeholder=\"Search\" #spann value=\"{{drug.name}}\" hidden>{{drug.name}}\n  </a> \n</div> -->\n\n\n    <div class=\"col-lg-4\">\n      <div class=\"search-box\" style=\"margin-bottom: 20px\">\n          <div class=\"main-title\">Search</div>\n          <div class=\"input-group home\">\n              <input type=\"text\" class=\"form-control\"  placeholder=\"Search\" #inputbox>\n              <div class=\"input-group-append\">\n                <button class=\"btn btn-primary\" (click)=\"doSearch(inputbox.value)\">Search</button>\n              </div>\n            </div>\n      </div>\n      <div class=\"col-lg-12 col-md-6\" *ngFor='let drug of dataService.results' style=\"margin-bottom: 10px\">\n          <div class=\"card\" style=\"width: 100%\">\n            <img class=\"card-img-top\" src=\"{{drug.thumbnail}}\">\n            <div class=\"card-body\">\n              <h5 class=\"card-title\">{{drug.name}}</h5>\n              <b class=\"card-text\">ALT NAMES:</b>{{drug.alt_names}}\n              <p class=\"card-text\">{{drug.description}}</p>\n              <a routerLink='drug/{{drug.slug}}' class=\"btn btn-primary full-width\">About</a>\n              <a href=\"#\" class=\"btn btn-primary full-width\">Safety</a>\n              <a href=\"#\" class=\"btn btn-primary full-width\">Combinations</a>\n            </div>\n          </div>\n          </div> \n      </div></div>\n<!-- <div class=\"row home-menu-box\" *ngFor='let drug of drugs'>\n  <div class=\"col-lg-2 inside-one\">\n    {{drug.name}}\n  </div>\n  <div class=\"col-lg-8\">\n    <div class=\"container-that-hides\">\n    <div class=\"holder-for-effects\">\n    <span class=\"badge badge-pill badge-primary category\">{{drug.category}}</span>\n    <span class=\"badge badge-pill badge-secondary\">Secondary</span>\n    <span class=\"badge badge-pill badge-success\">Success</span>\n    <span class=\"badge badge-pill badge-danger\">Danger</span>\n    <span class=\"badge badge-pill badge-warning\">Warning</span>\n    <span class=\"badge badge-pill badge-info\">Info</span>\n    <span class=\"badge badge-pill badge-light\">Light</span>\n    <span class=\"badge badge-pill badge-dark\">Dark</span>\n  </div></div></div>\n  <div class=\"col-lg-2 lets-get-lg-fked\">\n    <div class=\"input-group-append\">\n      <button class=\"btn btn-primary full-width and-the-btn-inside-it\">Search</button>\n    </div>\n  </div>\n</div> -->\n\n<!--  -->\n\n\n\n\n</div></div>"
+module.exports = "<div class=\"main-body-inner page \">\n<div class=\"container home-container\">\n  \n  <div class=\"row stats\">\n    <div class=\"col-lg-3\" *ngFor='let stat of stats'>\n      <div class=\"box first\">\n        <span class=\"title\">{{stat.name}} : {{stat.value}}</span>\n        <p class=\"subtitle\">{{stat.subtitle}}</p>\n      <i class=\"fa {{stat.icon}}\" aria-hidden=\"true\"></i>\n      </div>\n    </div>\n  </div>\n\n<!-- <div class=\"col-lg-12\" *ngFor='let n of notification'>\n<div *ngIf='n?.show'>\n  <div class=\"alert alert-danger alert-dismissible fade show\" role=\"alert\">\n{{n.important}}\n    <button type=\"button\" class=\"close\" data-dismiss=\"alert\" aria-label=\"Close\">\n      <span aria-hidden=\"true\">&times;</span>\n    </button>\n  </div></div>\n</div> -->\n<div class=\"row\">\n<div class=\"col-lg-4\">\n  <div class=\"box-my-list\">\n  <div class=\"title\">My List</div>\n  <div class=\"inside\">\n      <a href=\"javascript:void(0)\" *ngFor='let drug of drugs' (click)=\"doSearch(spann.value)\" class=\"badge badge-pill badge-primary category favourites\">\n          <input type=\"text\" class=\"form-control\"  placeholder=\"Search\" #spann value=\"{{drug.name}}\" hidden>{{drug.name}}\n      </a> \n  </div>\n</div>\n</div>\n\n<!-- <div class=\"col-lg-4\">\n<a href=\"javascript:void(0)\" *ngFor='let drug of drugs' (click)=\"doSearch(spann.value)\" class=\"badge badge-pill badge-primary category\">\n \n    <input type=\"text\" class=\"form-control\"  placeholder=\"Search\" #spann value=\"{{drug.name}}\" hidden>{{drug.name}}\n  </a> \n</div> -->\n\n\n    <div class=\"col-lg-4\">\n      <div class=\"search-box\" style=\"margin-bottom: 20px\">\n          <div class=\"main-title\">Search</div>\n          <div class=\"input-group home\">\n              <input type=\"text\" class=\"form-control\"  placeholder=\"Search\" #inputbox>\n              <div class=\"input-group-append\">\n                <button class=\"btn btn-primary\" (click)=\"doSearch(inputbox.value)\">Search</button>\n              </div>\n            </div>\n      </div>\n      <div class=\"col-lg-12 col-md-6\" *ngFor='let drug of dataService.results' style=\"margin-bottom: 10px\">\n          <div class=\"card\" style=\"width: 100%\">\n            <img class=\"card-img-top\" src=\"{{drug.thumbnail}}\">\n            <div class=\"card-body\">\n              <h5 class=\"card-title\">{{drug.name}}</h5>\n              <b class=\"card-text\">ALT NAMES:</b>{{drug.alt_names}}\n              <p class=\"card-text\">{{drug.description}}</p>\n              <a routerLink='drug/{{drug.slug}}' class=\"btn btn-primary full-width\">About</a>\n              <a href=\"#\" class=\"btn btn-primary full-width\">Safety</a>\n              <a href=\"#\" class=\"btn btn-primary full-width\">Combinations</a>\n            </div>\n          </div>\n          </div> \n      </div></div>\n<!-- <div class=\"row home-menu-box\" *ngFor='let drug of drugs'>\n  <div class=\"col-lg-2 inside-one\">\n    {{drug.name}}\n  </div>\n  <div class=\"col-lg-8\">\n    <div class=\"container-that-hides\">\n    <div class=\"holder-for-effects\">\n    <span class=\"badge badge-pill badge-primary category\">{{drug.category}}</span>\n    <span class=\"badge badge-pill badge-secondary\">Secondary</span>\n    <span class=\"badge badge-pill badge-success\">Success</span>\n    <span class=\"badge badge-pill badge-danger\">Danger</span>\n    <span class=\"badge badge-pill badge-warning\">Warning</span>\n    <span class=\"badge badge-pill badge-info\">Info</span>\n    <span class=\"badge badge-pill badge-light\">Light</span>\n    <span class=\"badge badge-pill badge-dark\">Dark</span>\n  </div></div></div>\n  <div class=\"col-lg-2 lets-get-lg-fked\">\n    <div class=\"input-group-append\">\n      <button class=\"btn btn-primary full-width and-the-btn-inside-it\">Search</button>\n    </div>\n  </div>\n</div> -->\n\n<!--  -->\n\n\n\n\n</div></div>"
 
 /***/ }),
 
@@ -561,6 +551,10 @@ var HomeComponent = /** @class */ (function () {
             console.log(stats);
             _this.stats = stats;
         });
+        this.dataService.getSigleDruglist().subscribe(function (state) {
+            console.log(state);
+            _this.stats = state;
+        });
         // this.dataService.getNotificationlist().subscribe((notification) => {
         //   console.log(notification);
         //   this.notification = notification;
@@ -589,59 +583,6 @@ var HomeComponent = /** @class */ (function () {
 //   notification: string;
 //   enabled: boolean;
 // }
-
-
-/***/ }),
-
-/***/ "./src/app/components/login/login.component.css":
-/***/ (function(module, exports) {
-
-module.exports = ""
-
-/***/ }),
-
-/***/ "./src/app/components/login/login.component.html":
-/***/ (function(module, exports) {
-
-module.exports = "<div class=\"login-model\">\n    <form class=\"form-inline my-2 my-lg-0\">\n        <div *ngIf=\"auth.user | async; then authenticated else guest\">\n          <!-- template will replace this div -->\n        </div>\n      </form>\n      <ng-template #guest>\n          <div class=\"btn-group\">\n              <span class=\"btn btn-dark no-hover\"><i class=\"fa fa-google\" aria-hidden=\"true\"></i></span> \n              <button class=\"btn btn-dark\" (click)=\"auth.googleLogin()\">Login with Google </button>\n          </div>\n    </ng-template>\n    <ng-template #authenticated>\n      <div *ngIf=\"auth.user | async as user\">\n          <button class=\"btn btn-dark my-2 my-sm-0\" (click)=\"auth.signOut()\">Logout</button>\n      </div>\n    </ng-template>\n   \n  </div>\n"
-
-/***/ }),
-
-/***/ "./src/app/components/login/login.component.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return LoginComponent; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__services_auth_service__ = __webpack_require__("./src/app/services/auth.service.ts");
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-var LoginComponent = /** @class */ (function () {
-    function LoginComponent(auth) {
-        this.auth = auth;
-    }
-    LoginComponent.prototype.ngOnInit = function () {
-    };
-    LoginComponent = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Component */])({
-            selector: 'app-login',
-            template: __webpack_require__("./src/app/components/login/login.component.html"),
-            styles: [__webpack_require__("./src/app/components/login/login.component.css")]
-        }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__services_auth_service__["a" /* AuthService */]])
-    ], LoginComponent);
-    return LoginComponent;
-}());
-
 
 
 /***/ }),
@@ -775,7 +716,7 @@ module.exports = ""
 /***/ "./src/app/components/static-on-all/static-on-all.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<a (click)=\"friendsSwtich(1);\"><div class=\"usersonline\" [ngClass]=\"{'friends-up': friendsSwtichStatus === 1}\" >\n  <div class=\"holder\">\n  <div class=\"title\">My Friends</div>\n  <div class=\"inside\">\n    <a href=\"javascript:void(0)\" *ngFor='let useon of usersonline' class=\"\">{{useon.username}}\n    <span class=\"status online\"></span> \n    </a>\n    <a href=\"javascript:void(0)\" *ngFor='let useoff of usersoffline' class=\"\">{{useoff.username}}\n         <span class=\"status offline\"></span> \n        </a>\n  </div></div>\n</div>\n</a>"
+module.exports = "<!-- <a (click)=\"friendsSwtich(1);\"><div class=\"usersonline\" [ngClass]=\"{'friends-up': friendsSwtichStatus === 1}\" >\n  <div class=\"holder\">\n  <div class=\"title\">My Friends</div>\n  <div class=\"inside\">\n    <a href=\"javascript:void(0)\" *ngFor='let useon of usersonline' class=\"\">{{useon.username}}\n    <span class=\"status online\"></span> \n    </a>\n    <a href=\"javascript:void(0)\" *ngFor='let useoff of usersoffline' class=\"\">{{useoff.username}}\n         <span class=\"status offline\"></span> \n        </a>\n  </div></div>\n</div>\n</a> -->\n<a (click)=\"friendsSwtich(1);\">\n  <div class=\"friends-button\" [ngClass]=\"{'shown': friendsSwtichStatus === 1}\">\n    <i class=\"fa fa-users\" aria-hidden=\"true\"></i>\n  </div>\n</a>\n\n<div class=\"off-canvas-friends\" [ngClass]=\"{'shown': friendsSwtichStatus === 1}\">\n  <div class=\"\">\n    <div class=\"title\">My Friends</div>\n    <div class=\"inside\">\n      <a href=\"javascript:void(0)\" *ngFor='let useon of usersonline' class=\"\">{{useon.username}}\n      <span class=\"status online\"></span> \n      </a>\n      <a href=\"javascript:void(0)\" *ngFor='let useoff of usersoffline' class=\"\">{{useoff.username}}\n           <span class=\"status offline\"></span> \n          </a>\n    </div>\n  </div>\n</div>\n"
 
 /***/ }),
 
@@ -829,181 +770,6 @@ var StaticOnAllComponent = /** @class */ (function () {
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__services_data_service__["a" /* DataService */]])
     ], StaticOnAllComponent);
     return StaticOnAllComponent;
-}());
-
-
-
-/***/ }),
-
-/***/ "./src/app/components/typeahead-focus/typeahead-focus.component.css":
-/***/ (function(module, exports) {
-
-module.exports = ""
-
-/***/ }),
-
-/***/ "./src/app/components/typeahead-focus/typeahead-focus.component.html":
-/***/ (function(module, exports) {
-
-module.exports = "<p>\n  typeahead-focus works!\n</p>\n"
-
-/***/ }),
-
-/***/ "./src/app/components/typeahead-focus/typeahead-focus.component.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TypeaheadFocusComponent; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-var TypeaheadFocusComponent = /** @class */ (function () {
-    function TypeaheadFocusComponent() {
-    }
-    TypeaheadFocusComponent.prototype.ngOnInit = function () {
-    };
-    TypeaheadFocusComponent = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Component */])({
-            selector: 'app-typeahead-focus',
-            template: __webpack_require__("./src/app/components/typeahead-focus/typeahead-focus.component.html"),
-            styles: [__webpack_require__("./src/app/components/typeahead-focus/typeahead-focus.component.css")]
-        }),
-        __metadata("design:paramtypes", [])
-    ], TypeaheadFocusComponent);
-    return TypeaheadFocusComponent;
-}());
-
-
-
-/***/ }),
-
-/***/ "./src/app/core/core.module.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CoreModule; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__services_auth_service__ = __webpack_require__("./src/app/services/auth.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_angularfire2_auth__ = __webpack_require__("./node_modules/angularfire2/auth/index.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_angularfire2_firestore__ = __webpack_require__("./node_modules/angularfire2/firestore/index.js");
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-
-
-
-
-var CoreModule = /** @class */ (function () {
-    function CoreModule() {
-    }
-    CoreModule = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["K" /* NgModule */])({
-            imports: [
-                __WEBPACK_IMPORTED_MODULE_2_angularfire2_auth__["b" /* AngularFireAuthModule */],
-                __WEBPACK_IMPORTED_MODULE_3_angularfire2_firestore__["b" /* AngularFirestoreModule */]
-            ],
-            providers: [__WEBPACK_IMPORTED_MODULE_1__services_auth_service__["a" /* AuthService */]]
-        })
-    ], CoreModule);
-    return CoreModule;
-}());
-
-
-
-/***/ }),
-
-/***/ "./src/app/services/auth.service.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AuthService; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__("./node_modules/@angular/router/esm5/router.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_firebase_app__ = __webpack_require__("./node_modules/firebase/app/index.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_firebase_app___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_firebase_app__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_angularfire2_auth__ = __webpack_require__("./node_modules/angularfire2/auth/index.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_angularfire2_firestore__ = __webpack_require__("./node_modules/angularfire2/firestore/index.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_rxjs_Observable__ = __webpack_require__("./node_modules/rxjs/_esm5/Observable.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_rxjs_add_operator_switchMap__ = __webpack_require__("./node_modules/rxjs/_esm5/add/operator/switchMap.js");
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-
-
-
-
-
-var AuthService = /** @class */ (function () {
-    function AuthService(afAuth, afs, router) {
-        var _this = this;
-        this.afAuth = afAuth;
-        this.afs = afs;
-        this.router = router;
-        //// Get auth data, then get firestore user document || null
-        this.user = this.afAuth.authState
-            .switchMap(function (user) {
-            if (user) {
-                return _this.afs.doc("users/" + user.uid).valueChanges();
-            }
-            else {
-                return __WEBPACK_IMPORTED_MODULE_5_rxjs_Observable__["a" /* Observable */].of(null);
-            }
-        });
-    }
-    AuthService.prototype.googleLogin = function () {
-        var provider = new __WEBPACK_IMPORTED_MODULE_2_firebase_app__["auth"].GoogleAuthProvider();
-        return this.oAuthLogin(provider);
-    };
-    AuthService.prototype.oAuthLogin = function (provider) {
-        var _this = this;
-        return this.afAuth.auth.signInWithPopup(provider)
-            .then(function (credential) {
-            _this.updateUserData(credential.user);
-        });
-    };
-    AuthService.prototype.updateUserData = function (user) {
-        // Sets user data to firestore on login
-        var userRef = this.afs.doc("users/" + user.uid);
-        var data = {
-            uid: user.uid,
-            email: user.email,
-            displayName: user.displayName,
-            photoURL: user.photoURL
-        };
-        return userRef.set(data, { merge: true });
-    };
-    AuthService.prototype.signOut = function () {
-        var _this = this;
-        this.afAuth.auth.signOut().then(function () {
-            _this.router.navigate(['/']);
-        });
-    };
-    AuthService = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["C" /* Injectable */])(),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_3_angularfire2_auth__["a" /* AngularFireAuth */],
-            __WEBPACK_IMPORTED_MODULE_4_angularfire2_firestore__["a" /* AngularFirestore */],
-            __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* Router */]])
-    ], AuthService);
-    return AuthService;
 }());
 
 
@@ -1102,6 +868,12 @@ var DataService = /** @class */ (function () {
     };
     DataService.prototype.getStatslist = function () {
         return this.cat = this.http.get(this.produrl + '/api/stats')
+            .map(function (response) { return response.json(); })
+            .catch(this._errorrHandler);
+    };
+    // Single Page Reqeuests
+    DataService.prototype.getSigleDruglist = function () {
+        return this.cat = this.http.get(this.produrl + '/api/drugssingle/lsd')
             .map(function (response) { return response.json(); })
             .catch(this._errorrHandler);
     };

@@ -30,7 +30,6 @@ export class DrugsingleComponent implements OnInit {
             // console.log(item)
             this.drugsingle = item;
           } else {
-
           }
         });
       });

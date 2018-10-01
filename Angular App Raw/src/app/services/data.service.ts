@@ -15,7 +15,7 @@ export class DataService {
   drugs: any;
   produrl: string = environment.produrl;
   searchRoot: string = this.produrl + '/api/drug';
-  results:Object[];
+  results: Object[];
   cat: any;
   constructor(public http: Http) {
     // console.log('works');
@@ -78,7 +78,14 @@ export class DataService {
     .map(response => response.json())
     .catch(this._errorrHandler);
   }
-  _errorrHandler (error: Response) {
+  // Single Page Reqeuests
+  getSigleDruglist() {
+    return this.cat = this.http.get(this.produrl + '/api/drugssingle/lsd')
+    .map(response => response.json())
+    .catch(this._errorrHandler);
+  }
+
+ _errorrHandler (error: Response) {
   console.error(error);
   return Observable.throw(error || 'Server Error');
   }

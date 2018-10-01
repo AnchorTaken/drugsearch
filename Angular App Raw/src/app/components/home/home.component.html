@@ -4,10 +4,9 @@
   <div class="row stats">
     <div class="col-lg-3" *ngFor='let stat of stats'>
       <div class="box first">
-        <span class="title">{{stat.name}}</span>
+        <span class="title">{{stat.name}} : {{stat.value}}</span>
         <p class="subtitle">{{stat.subtitle}}</p>
-        <span class="number">{{stat.value}}</span>
-        <i class="fa {{stat.icon}}" aria-hidden="true"></i>
+      <i class="fa {{stat.icon}}" aria-hidden="true"></i>
       </div>
     </div>
   </div>
@@ -27,9 +26,8 @@
   <div class="title">My List</div>
   <div class="inside">
       <a href="javascript:void(0)" *ngFor='let drug of drugs' (click)="doSearch(spann.value)" class="badge badge-pill badge-primary category favourites">
- 
           <input type="text" class="form-control"  placeholder="Search" #spann value="{{drug.name}}" hidden>{{drug.name}}
-        </a> 
+      </a> 
   </div>
 </div>
 </div>

@@ -1,0 +1,2 @@
+-- Friends list that is off screen and that gets displayed when you press the button to access it
+-- Permissions based on the number of factors. Can have preset permission that can be aquired when they gain xp and can create instant admins and moderators with lists of drugs they can adjust 

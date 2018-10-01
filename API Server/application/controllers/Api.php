@@ -83,6 +83,10 @@ class Api extends REST_Controller
         $stats = $this->stats->read();
         $this->response($stats); 
         }
+        public function drugssingle_get(){
+        $drugssingle = $this->drugssingle->read();
+        $this->response($drugssingle); 
+        }
         // public function menu_get(){
         //     $markets = $this->menu_model->read();
         //     $this->response($markets); 
