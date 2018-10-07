@@ -17,6 +17,7 @@ export class DataService {
   searchRoot: string = this.produrl + '/api/drug';
   results: Object[];
   cat: any;
+  udata: any;
   constructor(public http: Http) {
     // console.log('works');
     this.results = [];
@@ -44,7 +45,7 @@ export class DataService {
     return promise;
   }
   getUserinfo() {
-  return this.drugs = this.http.get(this.produrl + '/api/userdata')
+  return this.udata = this.http.get(this.produrl + '/api/userdata')
   .map(response => response.json())
   .catch(this._errorrHandler);
   }
@@ -80,7 +81,7 @@ export class DataService {
   }
   // Single Page Reqeuests
   getSigleDruglist() {
-    return this.cat = this.http.get(this.produrl + '/api/drugssingle/lsd')
+    return this.cat = this.http.get(this.produrl + '/api/drugssingle/phenobarbital')
     .map(response => response.json())
     .catch(this._errorrHandler);
   }

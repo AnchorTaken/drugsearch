@@ -34,11 +34,11 @@ class Drugssingle extends CI_Model {
         
         $str4 = $this->db->query("SELECT `negative_short_term` FROM `drugs_single` WHERE name = '" . $name . "'");
         $results4 = $str4->result();
-        foreach( $results4 as $key => $value4 )  
+        foreach( $results4 as $key => $value4)  
         $array4 = strpos( $value4->negative_short_term, "," ) ? explode( ",", $value4->negative_short_term ) : $value4;    
     
         $total_array = array('positive_s' => $array, 'positive_l' => $array2 ,'negative_s' => $array4,'negative_l' => $array3);   
-        return $total_array;
+        return ["effects" => $total_array];
 
     }
 }

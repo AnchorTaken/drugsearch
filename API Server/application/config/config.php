@@ -377,13 +377,12 @@ $config['encryption_key'] = 'gbt7yb87n';
 | except for 'cookie_prefix' and 'cookie_httponly', which are ignored here.
 |
 */
-ini_set('session.use_only_cookies', true);
 $config['sess_driver'] = 'database';
 $config['sess_cookie_name'] = 'ci_session';
-$config['sess_expiration'] = 60 * 60 * 60 * 24;
+$config['sess_expiration'] = 60 * 60 * 24 * 7;
 $config['sess_save_path'] = 'ci_sessions';
 $config['sess_match_ip'] = TRUE;
-$config['sess_time_to_update'] = 60 * 60 * 60 * 24;
+$config['sess_time_to_update'] = 300;
 $config['sess_regenerate_destroy'] = FALSE;
 
 /*

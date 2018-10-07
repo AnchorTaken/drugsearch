@@ -22,7 +22,23 @@
         </div>
       </li>
     </ul>
-    <div *ngFor='let u of userdata'>
+    <div class="user-control">
+      <div class="notification-bell">
+          <i class="fa fa-bell" aria-hidden="true"></i>
+      </div>
+      <div class="menu-dropdown">
+          <div class="circle">
+            <div class="arrow"></div>
+          <div class="dropdown">
+
+          </div>
+        </div>
+      </div>
+      <div class="logout-button">
+          <i class="fa fa-sign-out" aria-hidden="true"></i>
+      </div>
+    </div>
+    <!-- <div *ngFor='let u of userdata'>
     <div *ngIf='u?.NAME'>
     <form class="form-inline my-2 my-lg-0">
      <button class="btn btn-dark my-2 my-sm-0" (click)="onNavigate()">Logout</button>
@@ -33,7 +49,7 @@
        <button class="btn btn-dark my-2 my-sm-0" (click)="onNavigate()">Login</button>
       </form>
       </div>
-</div>
+</div> -->
   </div>
 </nav>
 <div class="bottom-slash"></div>

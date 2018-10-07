@@ -437,8 +437,7 @@ background: #7e57c2
 }
 .stats .box.first{
   background: #fff;
-  border-top: 1px solid #7e57c2;
-  border-bottom: 1px solid #7e57c2;
+  border: 1px solid #7e57c2;
 }
 .stats .box .title {
   display: block;
@@ -544,4 +543,16 @@ background: #7e57c2
 }
 .off-canvas-friends .inside a .status.offline {
   background: #a9a9a9;
+}
+.logout-button i{
+  font-size: 16px;
+  color: #fff;
+  float: left;
+  display: inline;
+}
+.notification-bell i{
+  font-size: 16px;
+  color: #fff;
+  float: left;
+  display: inline;
 }

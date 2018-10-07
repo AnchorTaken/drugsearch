@@ -40,10 +40,7 @@ export class HomeComponent implements OnInit {
     console.log(stats);
     this.stats = stats;
   });
-  this.dataService.getSigleDruglist().subscribe((state) => {
-    console.log(state);
-    this.stats = state;
-  });
+
   // this.dataService.getNotificationlist().subscribe((notification) => {
   //   console.log(notification);
   //   this.notification = notification;
