@@ -3,4 +3,4 @@
 @import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
 @import 'assets/css/main.css'; /* Custom Bootstrap */
 @import 'assets/css/styles.css'; /* Main Stylesheets */
-
+@import 'assets/css/font-awesome.min.css'; /* Main Stylesheets */

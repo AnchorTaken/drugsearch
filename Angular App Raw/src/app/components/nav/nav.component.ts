@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { DataService } from '../../services/data.service';
+import {FormControl} from '@angular/forms';
+import {Observable} from 'rxjs';
+import {map, startWith} from 'rxjs/operators';
 @Component({
   selector: 'app-nav',
   templateUrl: './nav.component.html',
@@ -28,6 +31,9 @@ export class NavComponent implements OnInit {
   }
   onNavigate() {
     window.location.href = '/app/logout';
+  }
+  doSearch(drugname: string) {
+    this.dataService.getDruglist(drugname);
   }
 
 }

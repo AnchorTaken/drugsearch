@@ -1,17 +1,16 @@
 <div class="main-body-inner page ">
-<div class="container home-container">
-  
-  <div class="row stats">
-    <div class="col-lg-3" *ngFor='let stat of stats'>
-      <div class="box first">
-        <span class="title">{{stat.name}} : {{stat.value}}</span>
-        <p class="subtitle">{{stat.subtitle}}</p>
-      <i class="fa {{stat.icon}}" aria-hidden="true"></i>
+  <div class="container home-container">
+
+    <div class="row stats">
+      <div class="col-lg-4" *ngFor='let stat of stats'>
+        <div class="box first">
+          <span class="title">{{stat.name}} : {{stat.value}}</span>
+          <p class="subtitle">{{stat.subtitle}}</p>
+          <i class="fa {{stat.icon}}" aria-hidden="true"></i>
+        </div>
       </div>
     </div>
-  </div>
-
-<!-- <div class="col-lg-12" *ngFor='let n of notification'>
+    <!-- <div class="col-lg-12" *ngFor='let n of notification'>
 <div *ngIf='n?.show'>
   <div class="alert alert-danger alert-dismissible fade show" role="alert">
 {{n.important}}
@@ -20,19 +19,27 @@
     </button>
   </div></div>
 </div> -->
-<div class="row">
-<div class="col-lg-4">
-  <div class="box-my-list">
-  <div class="title">My List</div>
-  <div class="inside">
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="box-my-list">
+          <div class="title">Quick Access</div>
+          <div class="insides row" *ngFor='let drug of drugs' style="margin:0px;">
+            <div class="mt-auto mb-auto col-lg-3">
+              <span class="name">{{drug.name}}</span>
+            </div>
+            <div class="col-lg-9 btn-group"> <a href="" class="btn btn-primary">More Information</a>
+              <a href="" class="btn btn-primary">Combinations</a></div>
+          </div>
+          <!-- <div class="inside">
+      <div class="outline"></div>
       <a href="javascript:void(0)" *ngFor='let drug of drugs' (click)="doSearch(spann.value)" class="badge badge-pill badge-primary category favourites">
           <input type="text" class="form-control"  placeholder="Search" #spann value="{{drug.name}}" hidden>{{drug.name}}
       </a> 
-  </div>
-</div>
-</div>
+  </div> -->
+        </div>
+      </div>
 
-<!-- <div class="col-lg-4">
+      <!-- <div class="col-lg-4">
 <a href="javascript:void(0)" *ngFor='let drug of drugs' (click)="doSearch(spann.value)" class="badge badge-pill badge-primary category">
  
     <input type="text" class="form-control"  placeholder="Search" #spann value="{{drug.name}}" hidden>{{drug.name}}
@@ -40,31 +47,9 @@
 </div> -->
 
 
-    <div class="col-lg-4">
-      <div class="search-box" style="margin-bottom: 20px">
-          <div class="main-title">Search</div>
-          <div class="input-group home">
-              <input type="text" class="form-control"  placeholder="Search" #inputbox>
-              <div class="input-group-append">
-                <button class="btn btn-primary" (click)="doSearch(inputbox.value)">Search</button>
-              </div>
-            </div>
-      </div>
-      <div class="col-lg-12 col-md-6" *ngFor='let drug of dataService.results' style="margin-bottom: 10px">
-          <div class="card" style="width: 100%">
-            <img class="card-img-top" src="{{drug.thumbnail}}">
-            <div class="card-body">
-              <h5 class="card-title">{{drug.name}}</h5>
-              <b class="card-text">ALT NAMES:</b>{{drug.alt_names}}
-              <p class="card-text">{{drug.description}}</p>
-              <a routerLink='drug/{{drug.slug}}' class="btn btn-primary full-width">About</a>
-              <a href="#" class="btn btn-primary full-width">Safety</a>
-              <a href="#" class="btn btn-primary full-width">Combinations</a>
-            </div>
-          </div>
-          </div> 
-      </div></div>
-<!-- <div class="row home-menu-box" *ngFor='let drug of drugs'>
+ 
+    </div>
+    <!-- <div class="row home-menu-box" *ngFor='let drug of drugs'>
   <div class="col-lg-2 inside-one">
     {{drug.name}}
   </div>
@@ -87,9 +72,10 @@
   </div>
 </div> -->
 
-<!--  -->
+    <!--  -->
 
 
 
 
-</div></div>
+  </div>
+</div>

@@ -1,10 +1,17 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+  <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
-  </button>
-
+  </button> -->
+  <div class="">
+    <div class="input-group home">
+      <input type="text" class="form-control" placeholder="Search" #inputbox>
+      <div class="input-group-append">
+        <button class="btn btn-dark m-0" (click)="doSearch(inputbox.value)">Search</button>
+      </div>
+    </div>
+  </div>
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
+    <!-- <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
         <button type="button" class="btn btn-dark my-2 my-sm-0">Home</button>
       </li>
@@ -21,9 +28,14 @@
           </div>
         </div>
       </li>
-    </ul>
+    </ul> -->
     <div class="user-control">
-      <div class="notification-bell">
+      <ul>
+        <li><i class="fa fa-bell" aria-hidden="true"></i></li>
+        <li></li>
+        <li><i class="fa fa-sign-out" aria-hidden="true"></i></li>
+      </ul>
+      <!-- <div class="notification-bell">
           <i class="fa fa-bell" aria-hidden="true"></i>
       </div>
       <div class="menu-dropdown">
@@ -36,7 +48,7 @@
       </div>
       <div class="logout-button">
           <i class="fa fa-sign-out" aria-hidden="true"></i>
-      </div>
+      </div> -->
     </div>
     <!-- <div *ngFor='let u of userdata'>
     <div *ngIf='u?.NAME'>

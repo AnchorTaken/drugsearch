@@ -34,5 +34,8 @@ export class StaticOnAllComponent implements OnInit {
       this.friendsSwtichStatus = newValue;
     }
   }
+  closeSearch(drugname: string) {
+    this.dataService.getDruglist(drugname);
+  }
 
 }
